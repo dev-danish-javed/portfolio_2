@@ -25,7 +25,6 @@ const Experience_Paymentus = () => {
       <div className="mt-3">
         <span className="fs-4 mt-4 text-color-accent fw-lighter">Paxcom -</span>
         <span className="fs-4 mt-4 text-color-accent fw-bold">Paymentus </span>
-        <small> (Dec 2022 - Current)</small>
       </div>
       <div className="faded_line_horizontal"></div>
       <p>
