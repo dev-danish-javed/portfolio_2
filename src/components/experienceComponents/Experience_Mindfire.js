@@ -21,6 +21,7 @@ return (
   <div className="slide-in">
     <div className="mt-3">
       <span className="fs-4 mt-4 text-color-accent fw-bold">Mindfire Solutions </span>
+      <small> (Dec 2020 - Nov 2022)</small>
     </div>
     <div className="faded_line_horizontal"></div>
     <p>
