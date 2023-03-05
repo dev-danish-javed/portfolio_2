@@ -1,0 +1,12 @@
+.b-tech {
+  clip-path: polygon(100% 0, 100% 70%, 50% 100%, 0 70%, 0 0);
+  /* filter: drop-shadow(30px -30px red); */
+  background: rgb(208, 237, 214);
+  background: radial-gradient(
+    circle,
+    #d0edd676 29%,
+    rgba(255, 242, 192, 0) 100%
+  );
+}
+.ed-sec {
+}
