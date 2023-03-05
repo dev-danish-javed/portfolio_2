@@ -89,7 +89,7 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
             <a
               href="https://www.linkedin.com/in/mr-danish/"
               target={"_blank"}
-              className="btn btn-sm btn-outline-dark w-100 rounded rounded-pill"
+              className="mt-2 btn btn-sm btn-outline-dark w-100 rounded rounded-pill"
             >
               <i className="fa-brands fa-linkedin"></i> LinkedIn
             </a>
