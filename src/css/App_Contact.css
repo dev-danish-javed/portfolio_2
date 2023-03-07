@@ -1,0 +1,12 @@
+.fa-phone{
+    text-shadow: 0.2rem 0.2rem 0.5rem grey;
+    animation: shake 100ms  2s 10 alternate-reverse forwards ease-in;
+}
+@keyframes shake {
+    from{
+        transform: rotate(40deg);
+    }
+    to{
+        transform: rotate(20deg);
+    }
+}
