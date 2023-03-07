@@ -21,7 +21,7 @@
   box-shadow: 0 0 1rem var(--accent-shadow);
 }
 .text-color-accent{
-  color: var(--accent-color);
+  color: var(--accent-color) !important;
 }
 .shadow-top-bottom-only{
   box-shadow: 0 0.3rem 0.5rem -0.5rem black, 0px -0.3rem 0.5rem -0.5rem black;
@@ -66,7 +66,7 @@
   
 }
 .border-accent{
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--accent-color) !important;
 }
 @-webkit-keyframes bubble-even {
   0% {

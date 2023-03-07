@@ -3,10 +3,12 @@ import Fade from "@mui/material/Fade";
 import { useEffect, useState } from "react";
 import resume from "./../assets/Docs/Danish Javed Resume.pdf";
 import "./../css/App_Contact.css";
-const App_Contact = ({ activeRoute, handleMenuChange }) => {
+const App_Contact = ({ activeRoute, handleMenuChange }) => {  
+  
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const getMessage = (type) => {
+   
     if (type === "mail")
     {
       if( name && message)
@@ -79,7 +81,7 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
         <div className="fs-5 text-center lead text-dark opacity-75 py-2 d-md-block d-none">
           "I would love to get in touch with you.
           <br />
-          We can discuss projects, ideas and concepts."
+          We can discuss projects, ideas, tech and concepts."
         </div>
         <div className="d-flex justify-content-around justify-content-md-end align-items-center gap-2 gap-md-5 mt-2 flex-wrap">
           <div className="mt-3 col-11 col-md-5 d-flex flex-column flex-md-row flex-wrap gap-2 justify-content-between">
@@ -94,7 +96,7 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
               <i className="fa-brands fa-linkedin"></i> LinkedIn
             </a>
             <a
-              className="btn btn-sm btn-outline-dark w-100 rounded rounded-pill d-block d-md-none"
+              className="btn btn-sm border-accent text-color-accent shadow-sm fw-semibold w-100 rounded rounded-pill d-block d-md-none"
               href={resume}
               download="Danish Javed Resume"
             >
@@ -104,13 +106,13 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
           <div className="mt-3 d-block d-md-none">
             <a
               href="tel:+917525057580"
-              className="display-4 rounded rounded-circle border border-secondary shadow p-3"
+              className="display-4 rounded rounded-circle border border-secondary shadow-top-bottom-only p-3"
             >
               <i className="fa-solid fa-phone text-dark"></i>
             </a>
           </div>
           <div className="d-block d-md-none small px-2">OR</div>
-          <div className="mx-auto mx-md-0 ps-md-4 float-md-end d-flex justify-content-between flex-grow-1 align-items-end flex-column gap-1">
+          <div className="d-flex flex-grow-1 flex-column gap-1">
             <TextField
               id="subject"
               label="Name"
