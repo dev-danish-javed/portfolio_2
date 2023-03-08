@@ -54,7 +54,7 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
         <div>{item.item}</div>
         <div className="flex-grow-1 border-dotted-bottom"></div>
       </div>
-      <div className="text-nowrap">{item.desc}</div>
+      <div className="text-nowrap text-dark">{item.desc}</div>
     </div>
   ));
 
@@ -91,7 +91,7 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
             <a
               href="https://www.linkedin.com/in/mr-danish/"
               target={"_blank"}
-              className="mt-2 btn btn-sm btn-outline-dark w-100 rounded rounded-pill"
+              className="mt-2 btn btn-sm btn-outline-secondary w-100 rounded rounded-pill"
             >
               <i className="fa-brands fa-linkedin"></i> LinkedIn
             </a>
