@@ -1,5 +1,6 @@
 import React, { Component, useEffect } from "react";
 import { Link } from "react-router-dom";
+import vibrateDevice from "../utils/VibrateDevices";
 import "./../css/App_Education.css";
 const App_Education = ({ activeRoute, handleMenuChange }) => {
   useEffect(() => {
@@ -31,6 +32,7 @@ const App_Education = ({ activeRoute, handleMenuChange }) => {
             <Link
               to="/experience/sapient"
               className=" text-color-accent fw-bold text-nowrap"
+              onClick={()=>{vibrateDevice(35)}}
             >
               Publicis Sapient
             </Link>
