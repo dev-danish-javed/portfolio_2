@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import App_Routes from "../App_Routes";
+import vibrateDevice from "../utils/VibrateDevices";
 import "./../css/App_Nav.css";
 const App_Nav = ({menuItems, handleMenuChange, isMobile,activeRoute}) => {
 
@@ -10,6 +11,7 @@ const App_Nav = ({menuItems, handleMenuChange, isMobile,activeRoute}) => {
   let activeItem=menuItems.filter(element => activeRoute?.includes(element.route))[0];
   let navigate = useNavigate();
   const handleNavClick=(route)=>{
+    vibrateDevice();
     document.getElementsByClassName('page-item')[0]?.classList.add('slide-out');
     handleMenuChange(route);     
     setTimeout(() => {
