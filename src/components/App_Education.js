@@ -8,8 +8,8 @@ const App_Education = ({ activeRoute, handleMenuChange }) => {
   });
   return (
     <div className="page-item px-4 slide-in">
-      <div className="row h-50">
-        <div className="ed-sec b-tech h-100">
+      <div className="row">
+        <div className="ed-sec b-tech">
           <div className="mt-3 d-flex align-items-center justify-content-between gap-3">
             <div className="fs-4  text-color-accent fw-bold">B.Tech - NIET</div>
             <div>
@@ -22,8 +22,11 @@ const App_Education = ({ activeRoute, handleMenuChange }) => {
             Noida Institute of Engineering and Technology, is a self financed
             Institute which offers quality education to students from all
             corners of the country. It is situated in Greater Noida
-            <br />
-            <br />I scored 76% and after my course completion, I received campus
+            <br /><br />
+            Apart from Programming and assignments and projects that place taught me a lot about life as well.
+            It taught me how to handle pressure,how to keep up with deadlines, how to work with team, 
+            how not to handle rejection, how to remain consistent (through attendance😁) and much much more.
+            <br /><br />I scored 76% and after my course completion, I received campus
             placement with {" "}
             <Link
               to="/experience/sapient"
@@ -32,12 +35,12 @@ const App_Education = ({ activeRoute, handleMenuChange }) => {
               Publicis Sapient
             </Link>
           </p>
-          <div className="h-25"></div>
         </div>
       </div>
+      <div className="faded_line_horizontal mt-0 d-none d-md-block"></div>
       <div className="d-flex flex-column flex-md-row gap-2 gap-md-4">
         <div className="col ed-sec">
-          <div className="my-3">
+          <div className="my-3 d-flex justify-content-between align-items-center">
             <div className="fs-4  text-color-accent fw-bold">
               12<sup className="">th</sup> - RLB
             </div>
@@ -56,9 +59,9 @@ const App_Education = ({ activeRoute, handleMenuChange }) => {
         </div>
         <div className="faded_line_vertical mx-0 d-none d-md-block"></div>
         <div className="col ed-sec">
-          <div className="my-3">
+          <div className="my-3 d-flex justify-content-between align-items-center">
             <div className="fs-4  text-color-accent fw-bold">
-              10<sup className="">th</sup> - Galaxy Residential
+              10<sup className="">th</sup> - Galaxy
             </div>
             <div className=" fw-bold">2014</div>
           </div>
