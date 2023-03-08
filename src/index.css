@@ -200,7 +200,7 @@
   }
 }
 .slide-out{
-  animation: slide-out 200ms 1 forwards  ease-in-out;
+  animation: slide-out 300ms 1 ease-in-out;
  }
  @keyframes slide-out {
   0% {

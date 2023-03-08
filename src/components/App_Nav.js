@@ -14,7 +14,7 @@ const App_Nav = ({menuItems, handleMenuChange, isMobile,activeRoute}) => {
     handleMenuChange(route);     
     setTimeout(() => {
     navigate(route);
-    }, 200);
+    }, 300);
   }
   // menuItems = menuItems.map((item,index) => (
   //   <Link to={item.route} className={" d-flex flex-column menu-item text-center "+ (activeItem===item?"active":"")} 
