@@ -64,7 +64,7 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
         <div className="h-50 mb-5">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224096.33663241914!2d77.25281390517094!3d28.645133432818064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1678040235576!5m2!1sen!2sin"
-            className="w-100 h-100 border opacity-75 rounded rounded-3 map"
+            className="w-100 h-100 border rounded rounded-3 map"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>

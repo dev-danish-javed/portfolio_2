@@ -10,3 +10,15 @@
         transform: rotate(20deg);
     }
 }
+.map{
+    animation: slowlyVisible 2s 1 forwards ease-in;
+    filter: saturate(1.5);
+}
+@keyframes slowlyVisible {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.75;
+    }
+}
