@@ -1,6 +1,7 @@
 import { Snackbar, TextField } from "@mui/material";
 import Fade from "@mui/material/Fade";
 import { useEffect, useState } from "react";
+import vibrateDevice from "../utils/VibrateDevices";
 import resume from "./../assets/Docs/Danish Javed Resume.pdf";
 import "./../css/App_Contact.css";
 const App_Contact = ({ activeRoute, handleMenuChange }) => {  
@@ -107,6 +108,7 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
             <a
               href="tel:+917525057580"
               className="display-4 rounded rounded-circle border border-secondary shadow-top-bottom-only p-3"
+              onClick={()=>{vibrateDevice(150)}}
             >
               <i className="fa-solid fa-phone text-dark"></i>
             </a>

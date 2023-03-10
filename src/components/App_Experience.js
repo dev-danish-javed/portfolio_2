@@ -6,6 +6,7 @@ import sapeintLogo from "./../assets/Company Logos/Sapient Logo.png";
 import { Link, Navigate, Outlet, useNavigate } from "react-router-dom";
 import { Tab, Tabs } from "react-bootstrap";
 import App_Routes from "../App_Routes";
+import vibrateDevice from "../utils/VibrateDevices";
 
 const App_Experience = ({ activeRoute, handleMenuChange }) => {
   
@@ -36,6 +37,7 @@ const App_Experience = ({ activeRoute, handleMenuChange }) => {
   ));
   const handleTabChange = (tabUrl) => {
     setActiveTab(tabs.filter(tab=>tab.url===tabUrl)[0].title);
+    vibrateDevice(35);
     navigate(tabUrl);
   };
   

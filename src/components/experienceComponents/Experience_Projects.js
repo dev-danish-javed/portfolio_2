@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import App_Routes from "../../App_Routes";
+import vibrateDevice from "../../utils/VibrateDevices";
 
 const Experience_Projects = ({ activeRoute, handleMenuChange }) => {
   let navigate = useNavigate();
@@ -20,6 +21,8 @@ const Experience_Projects = ({ activeRoute, handleMenuChange }) => {
   ];
 
   const handleProjectChange = (activeProjectUrl) => {
+    
+    vibrateDevice(35);
     setTimeout(() => {
       let newActiveProject = projects.filter(
         (project) => project.url === activeProjectUrl
