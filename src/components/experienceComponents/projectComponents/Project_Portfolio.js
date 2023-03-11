@@ -22,7 +22,7 @@ const Project_Portfolio =() =>{
                 Protfolio{" "}
               </span>
               <a
-                href="https://github.com/mr-danish-javed/BaanBaini"
+                href="https://github.com/mr-danish-javed/portfolio_2.0"
                 target={"_blank"}
                 className="shadow-sm rounded rounded-pill btn btn-sm border border-secondary px-4 d-flex align-items-center"
               >
