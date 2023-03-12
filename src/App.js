@@ -1,7 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import "./animation.css";
 import "./App.css";
 import App_Routes from "./App_Routes";
 import App_About from "./components/App_About";
@@ -15,7 +14,7 @@ import "./index.css";
 import bubbles from "./utils/Bubbles";
 import menuItems from "./utils/MenuItems";
 import Experience_Payemntus from './components/experienceComponents/Experience_Paymentus';
-import Experience_Mindifire from './components/experienceComponents/Experience_Mindfire';
+import Experience_Mindfire from './components/experienceComponents/Experience_Mindfire';
 import Experience_Projects from './components/experienceComponents/Experience_Projects';
 import Experience_Sapient from './components/experienceComponents/Experience_Sapient';
 import Project_My_Space from "./components/experienceComponents/projectComponents/Project_My_Space";
@@ -127,7 +126,7 @@ function App() {
                 <Route
                   path={App_Routes.EXPERIENCE.MINDFIRE}
                   element={
-                    <Experience_Mindifire
+                    <Experience_Mindfire
                       handleMenuChange={handleMenuChange}
                       activeRoute={activeRoute}
                     />

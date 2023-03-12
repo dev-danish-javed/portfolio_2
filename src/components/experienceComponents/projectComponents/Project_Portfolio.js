@@ -3,7 +3,7 @@ const Project_Portfolio =() =>{
         "React",
         "JavaScript",
         "Bootstrap",
-        "Font Awsome",
+        "Font Awesome",
         "HTML",
         "CSS",
       ];
@@ -18,12 +18,12 @@ const Project_Portfolio =() =>{
         <div className="slide-in">
           <div className="mt-3">
             <div className="d-flex justify-content-between gap-3 align-items-center ">
-              <span className="fs-4  about-redirect-buttontext-color-accent fw-bold">
-                Protfolio{" "}
+              <span className="fs-4  about-redirect-button text-color-accent fw-bold">
+                Portfolio{" "}
               </span>
               <a
                 href="https://github.com/mr-danish-javed/portfolio_2.0"
-                target={"_blank"}
+                target={"_blank"} rel={"noreferrer"}
                 className="shadow-sm rounded rounded-pill btn btn-sm border border-secondary px-4 d-flex align-items-center"
               >
                 <i className="fa-brands fa-github fs-2 me-2"></i> Github

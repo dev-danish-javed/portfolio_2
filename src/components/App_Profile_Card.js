@@ -6,15 +6,14 @@ import resume from "./../assets/Docs/Danish Javed Resume.pdf";
 import my_pic from "./../assets/images/My Pic.png";
 import "./../css/App_Profile_Card.css";
 
-
 class App_Profile_Card extends React.Component {
   constructor() {
     super();
     this.state = { textIdx: 0 };
   }
-  
+
   profileTexts = profileTexts;
-  
+
   componentDidMount() {
     this.timeout = setInterval(() => {
       let currentIdx = this.state.textIdx;
@@ -37,35 +36,40 @@ class App_Profile_Card extends React.Component {
           }
         >
           <div className="profile-image-container rounded rounded-3">
-            <img src={my_pic} id="profile-pic" className="" alt="profile-pic"></img>
+            <img
+              src={my_pic}
+              id="profile-pic"
+              className=""
+              alt="profile-pic"
+            ></img>
           </div>
           <div className="name text-nowrap text-truncate">Danish Javed</div>
           <div className="d-flex justify-content-center gap-4 py-2 fs-5">
             <a
               href="https://github.com/mr-danish-javed"
               title="Github"
-              target={"_blank"}
+              target={"_blank"} rel={"noreferrer"}
             >
               <i className="fa-brands fa-github"></i>
             </a>
             <a
               href="https://www.hackerrank.com/Danish_Javed"
               title="HackerRank"
-              target={"_blank"}
+              target={"_blank"} rel={"noreferrer"}
             >
               <i className="fa-brands fa-hackerrank"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/mr-danish/"
               title="LinkedIn"
-              target={"_blank"}
+              target={"_blank"} rel={"noreferrer"}
             >
               <i className="fa-brands fa-linkedin"></i>
             </a>
             <a
               href="https://stackoverflow.com/users/11842836/danish-javed"
               title="Stackoverflow"
-              target={"_blank"}
+              target={"_blank"} rel={"noreferrer"}
             >
               <i className="fa-brands fa-stack-overflow"></i>
             </a>

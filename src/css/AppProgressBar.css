@@ -1,6 +1,6 @@
 .skill_progress{
     --value: 25;
-    --orgnalValue:var(--value);
+    --originalValue:var(--value);
 }
 .skill_progress .skill-bg{
     height: 9rem;
@@ -13,64 +13,64 @@
         --value:0;
     }
     5%{
-        --value:calc(var(--orgnalValue)*0.05);
+        --value:calc(var(--originalValue)*0.05);
     }
     10%{
-        --value:calc(var(--orgnalValue)*0.1);
+        --value:calc(var(--originalValue)*0.1);
     }
     15%{
-        --value:calc(var(--orgnalValue)*0.15);
+        --value:calc(var(--originalValue)*0.15);
     }
     20%{
-        --value:calc(var(--orgnalValue)*0.2);
+        --value:calc(var(--originalValue)*0.2);
     }
     25%{
-        --value:calc(var(--orgnalValue)*0.25);
+        --value:calc(var(--originalValue)*0.25);
     }
     30%{
-        --value:calc(var(--orgnalValue)*0.3);
+        --value:calc(var(--originalValue)*0.3);
     }
     35%{
-        --value:calc(var(--orgnalValue)*0.35);
+        --value:calc(var(--originalValue)*0.35);
     }
     40%{
-        --value:calc(var(--orgnalValue)*0.4);
+        --value:calc(var(--originalValue)*0.4);
     }
     45%{
-        --value:calc(var(--orgnalValue)*0.45);
+        --value:calc(var(--originalValue)*0.45);
     }
     50%{
-        --value:calc(var(--orgnalValue)*0.5);
+        --value:calc(var(--originalValue)*0.5);
     }
     55%{
-        --value:calc(var(--orgnalValue)*0.55);
+        --value:calc(var(--originalValue)*0.55);
     }
     60%{
-        --value:calc(var(--orgnalValue)*0.60);
+        --value:calc(var(--originalValue)*0.60);
     }
     65%{
-        --value:calc(var(--orgnalValue)*0.65);
+        --value:calc(var(--originalValue)*0.65);
     }
     70%{
-        --value:calc(var(--orgnalValue)*0.7);
+        --value:calc(var(--originalValue)*0.7);
     }
     75%{
-        --value:calc(var(--orgnalValue)*0.75);
+        --value:calc(var(--originalValue)*0.75);
     }
     80%{
-        --value:calc(var(--orgnalValue)*0.8);
+        --value:calc(var(--originalValue)*0.8);
     }
     85%{
-        --value:calc(var(--orgnalValue)*0.85);
+        --value:calc(var(--originalValue)*0.85);
     }
     90%{
-        --value:calc(var(--orgnalValue)*0.9);
+        --value:calc(var(--originalValue)*0.9);
     }    
     95%{
-        --value:calc(var(--orgnalValue)*0.95);
+        --value:calc(var(--originalValue)*0.95);
     }
     100%{
-        --value:var(--orgnalValue);
+        --value:var(--originalValue);
     }
 }
 

@@ -37,7 +37,7 @@ const Experience_Paymentus = () => {
         through their preferred payment channel and type.
       </p>
       <div>
-        <div className="fw-bold mt-2">My Roles and responsibilies</div>
+        <div className="fw-bold mt-2">My Roles and responsibilities</div>
         <div className="faded_line_horizontal my-1"></div>
         <ul>
           <li>Working on front-end and back-end technical solutions</li>
