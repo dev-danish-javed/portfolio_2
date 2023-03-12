@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import vibrateDevice from "../utils/VibrateDevices";
 import "./../css/App_Education.css";
@@ -20,19 +20,26 @@ const App_Education = ({ activeRoute, handleMenuChange }) => {
           </div>
           <div className="faded_line_horizontal"></div>
           <p>
-          <span className="fw-bold">Noida Institute of Engineering and Technology</span>, is a self financed
-            Institute. It is situated in Greater Noida. It is is affiliated to
-            <span className="fw-bold"> Abdul Kalam Technical University (AKTU)</span> and is accredited by the
-            National Board of Accreditation (NBA)
+            <span className="fw-bold">
+              Noida Institute of Engineering and Technology
+            </span>
+            , is a self financed Institute. It is situated in Greater Noida. It
+            is is affiliated to
+            <span className="fw-bold">
+              {" "}
+              Abdul Kalam Technical University (AKTU)
+            </span>{" "}
+            and is accredited by the National Board of Accreditation (NBA)
             <br />
             <br />
-            Apart from Programming and assignments and projects I learned a lot about life as well.
-            It taught me how to handle pressure,how to keep up with deadlines, 
-            how to work with team, how not to handle rejection, 
-            how to remain consistent (through attendance😁) and much much more.
+            Apart from Programming and assignments and projects I learned a lot
+            about life as well. It taught me how to handle pressure,how to keep
+            up with deadlines, how to work with team, how not to handle
+            rejection, how to remain consistent (through attendance😁) and much
+            much more.
             <br />
-            <br />I scored <span className="fw-bold">76%</span> and after my course completion, I received campus
-            placement with{" "}
+            <br />I scored <span className="fw-bold">76%</span> and after my
+            course completion, I received campus placement with{" "}
             <Link
               to="/experience/sapient"
               className=" text-color-accent fw-bold text-nowrap"
@@ -56,13 +63,20 @@ const App_Education = ({ activeRoute, handleMenuChange }) => {
           </div>
           <div className="faded_line_horizontal d-block d-md-none"></div>
           <p>
-            <span className="fw-bold">Rani Laxmi Bai Memorial Senior Secondary School</span>, is one the most
-            reputed and prestigious schools in Lucknow. Its affiliated with
-            <span className="fw-bold"> Central Board of Secondary Education (CBSE)</span>
+            <span className="fw-bold">
+              Rani Laxmi Bai Memorial Senior Secondary School
+            </span>
+            , is one the most reputed and prestigious schools in Lucknow. Its
+            affiliated with
+            <span className="fw-bold">
+              {" "}
+              Central Board of Secondary Education (CBSE)
+            </span>
             <br />
             Here I was introduced to programming for the first time. I learned
             C++ and gained some familiarity with OOPs.
-            <br />I joined here in May 2014 and left with <span className="fw-bold">68.4%</span> and{" "}
+            <br />I joined here in May 2014 and left with{" "}
+            <span className="fw-bold">68.4%</span> and{" "}
             <span className="fw-bold">Passion for Programming</span>.
           </p>
         </div>
@@ -78,12 +92,16 @@ const App_Education = ({ activeRoute, handleMenuChange }) => {
           <p>
             Galaxy Residential Public School is where I got my basic foundations
             from.Its affiliated with
-            <span className="fw-bold"> Central Board of Secondary Education (CBSE)</span>
+            <span className="fw-bold">
+              {" "}
+              Central Board of Secondary Education (CBSE)
+            </span>
             <br />
             Along with the academics I learned the morals and behavioral
             mannerism.
-            <br />I did pretty well and score <span className="fw-bold">10 CGPA</span> and became the <span className="fw-bold">Head Boy</span> /
-            School Captain as well.
+            <br />I did pretty well and score{" "}
+            <span className="fw-bold">10 CGPA</span> and became the{" "}
+            <span className="fw-bold">Head Boy</span> / School Captain as well.
           </p>
         </div>
       </div>

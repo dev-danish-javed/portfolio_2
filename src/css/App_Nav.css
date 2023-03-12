@@ -1,5 +1,4 @@
 .menu {
-    /* max-width: fit-content; */
     font-size: 0.8rem;
     margin-right: 2rem;
 }
@@ -37,7 +36,6 @@
 }
 
 .menu .active i {
-    /* color:var(--accent-color); */
     text-shadow: 0 0 1rem var(--accent-color);
     transform: scale(1.5);
     margin-bottom: 0.3rem;
@@ -47,18 +45,8 @@
 .menu .active div {
     color: var(--accent-color);
 }
+
 @media all and (max-width:600px) {
-    /* put your css styles in here */
-
-    /* .menu {
-        max-width: unset;
-        width: 1vw;
-        margin-right: 0 !important;
-        font-size: 0.8rem;
-        position: sticky;
-        top: 0;
-    } */
-
     .menu i {
         font-size: 1.5rem;
     }

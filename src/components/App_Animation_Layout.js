@@ -23,27 +23,13 @@ const App_Animation_Layout = () => {
   const { pathname } = useLocation();
   return (
     <PageLayout>
-      {/* <motion.div
-        key={pathname}
-        initial={{ x: -1500 }}
-        animate={{
-          x: 0,
-          y: 0,
-          scale: 1,
-          rotate: 0,
-        }}
-        transition={{ ease: "easeOut", duration: 2 }}
-      >
-        
-        <Outlet />
-      </motion.div> */}
       <AnimatePresence>
         <motion.div
           key={pathname}
-          initial={{ x:-3000}}
-          animate={{ x:0 }}
-          exit={{ x:-3000 }}
-          transition={{duration: 2 }}
+          initial={{ x: -3000 }}
+          animate={{ x: 0 }}
+          exit={{ x: -3000 }}
+          transition={{ duration: 2 }}
         >
           <Outlet />
         </motion.div>

@@ -28,7 +28,6 @@
 .about-redirect-button a {
     text-decoration: none;
     color: whitesmoke;
-    /* text-shadow: 0 0 0.2rem rgba(255, 255, 255, 0.744); */
 }
 
 .about-redirect-button .fa-arrow-right {
@@ -42,6 +41,7 @@
         box-shadow: -1rem -1rem 0rem var(--accent-shadow), 1rem 0 2rem black;
         width: 100vw;
     }
+
     .profile-card img {
         height: 55vh;
     }

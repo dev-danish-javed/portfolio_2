@@ -5,21 +5,20 @@ import serverIcon from "./../assets/Tech Icons/Server Icon.png";
 import stackIcon from "./../assets/Tech Icons/FullStack Icon.png";
 import deploymentIcon from "./../assets/Tech Icons/Deployment Icon.png";
 const App_About = ({ activeRoute, handleMenuChange }) => {
-
   class AboutItem {
     constructor(item, desc) {
       this.item = item;
       this.desc = desc;
     }
   }
-  let aboutItems=[
-    new AboutItem('EXPERIENCE','2 years'),
-    new AboutItem('PROFILE','Java Full Stack Dev.'),
-    new AboutItem('RESIEDENCE','Noida, India'),
-    new AboutItem('AGE','25 years')
+  let aboutItems = [
+    new AboutItem("EXPERIENCE", "2 years"),
+    new AboutItem("PROFILE", "Java Full Stack Dev."),
+    new AboutItem("RESIDENCE", "Noida, India"),
+    new AboutItem("AGE", "25 years"),
   ];
 
-  aboutItems = aboutItems.map((item,index) => (
+  aboutItems = aboutItems.map((item, index) => (
     <div className="d-flex gap-2 col-12 col-lg-6" key={index}>
       <div className="d-flex col-6 gap-2">
         <div>{item.item}</div>
@@ -56,7 +55,7 @@ const App_About = ({ activeRoute, handleMenuChange }) => {
         <div className="faded_line_horizontal"></div>
         <div className="mt-3 d-flex flex-column flex-md-row flex-wrap gap-2 justify-content-between">
           <div className="d-flex justify-content-between w-100 flex-wrap">
-          {aboutItems}
+            {aboutItems}
           </div>
         </div>
 
@@ -115,7 +114,7 @@ const App_About = ({ activeRoute, handleMenuChange }) => {
             </div>
             <p className="service-description">
               I can deploy and host your static websites for a broader reach.
-              Add your Website url to cards and reciepts and attract much more
+              Add your Website url to cards and receipts and attract much more
               potential buyers.
             </p>
           </div>

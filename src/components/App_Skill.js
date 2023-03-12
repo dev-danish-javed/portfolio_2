@@ -35,7 +35,7 @@ const App_SKill = ({ activeRoute, handleMenuChange }) => {
       this.name = name;
     }
   }
-  class Certifcate {
+  class Certificate {
     constructor(image, url, topic) {
       this.image = image;
       this.url = url;
@@ -66,27 +66,27 @@ const App_SKill = ({ activeRoute, handleMenuChange }) => {
   ));
 
   let certificates = [
-    new Certifcate(
+    new Certificate(
       javaCertificate,
       "https://www.hackerrank.com/certificates/434371378a5d",
       "Java"
     ),
-    new Certifcate(
+    new Certificate(
       problemSolvingCertificate,
       "https://www.hackerrank.com/certificates/07a3f6563470",
       "Problem Solving"
     ),
-    new Certifcate(
+    new Certificate(
       angularCertificate,
       "https://www.hackerrank.com/certificates/cdf5996c008d",
       "Angular"
     ),
-    new Certifcate(
+    new Certificate(
       reactCertificate,
       "https://www.hackerrank.com/certificates/d039f1eba3c8",
       "React"
     ),
-    new Certifcate(
+    new Certificate(
       javaScriptCertificate,
       "https://www.hackerrank.com/certificates/2c11f5fc8e38",
       "JavaScript"
@@ -95,12 +95,18 @@ const App_SKill = ({ activeRoute, handleMenuChange }) => {
   certificates = certificates.map((certi) => (
     <a
       href={certi.url}
-      target={"_blank"}
+      target={"_blank"} rel={"noreferrer"}
       className="text-decoration-none text-dark col-5 py-2"
       key={certi.url}
     >
-      <img src={certi.image} className="w-100 rounded-bottom rounded rounded-3 "></img>
-      <div className="text-center py-1 shadow-sm rounded-top rounded-pill">{certi.topic}</div>
+      <img
+        src={certi.image}
+        className="w-100 rounded-bottom rounded rounded-3 "
+        alt={certi.topic}
+      ></img>
+      <div className="text-center py-1 shadow-sm rounded-top rounded-pill">
+        {certi.topic}
+      </div>
     </a>
   ));
   return (
@@ -217,7 +223,9 @@ const App_SKill = ({ activeRoute, handleMenuChange }) => {
         <div className="faded_line_horizontal"></div>
         <div className="fs-5 text-color-accent">HackerRank Certificates</div>
 
-        <div className="certificates d-flex flex-wrap justify-content-around mt-3 gap-2">{certificates}</div>
+        <div className="certificates d-flex flex-wrap justify-content-around mt-3 gap-2">
+          {certificates}
+        </div>
       </div>
     </>
   );

@@ -1,37 +1,30 @@
-import { Snackbar, TextField } from "@mui/material";
-import Fade from "@mui/material/Fade";
+import { TextField } from "@mui/material";
 import { useEffect, useState } from "react";
 import vibrateDevice from "../utils/VibrateDevices";
 import resume from "./../assets/Docs/Danish Javed Resume.pdf";
 import "./../css/App_Contact.css";
-const App_Contact = ({ activeRoute, handleMenuChange }) => {  
-  
+const App_Contact = ({ activeRoute, handleMenuChange }) => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const getMessage = (type) => {
-   
-    if (type === "mail")
-    {
-      if( name && message)
-      return (
-        "mailto:danishjaved636@gmail.com?subject=" +
-        encodeURI(name + " From Portfolio") +
-        "&body=" +
-        encodeURI(message)
-      );
-      else 
-      return "mailto:danishjaved636@gmail.com";
+    if (type === "mail") {
+      if (name && message)
+        return (
+          "mailto:danishjaved636@gmail.com?subject=" +
+          encodeURI(name + " From Portfolio") +
+          "&body=" +
+          encodeURI(message)
+        );
+      else return "mailto:danishjaved636@gmail.com";
     }
-    
-    if (type === "whatsapp")
-    {
-      if( name && message)
-      return (
-        "http://wa.me/+917525057580?text=" +
-        encodeURI("*" + name + " From Portfolio* \n\n" + message)
-      );
-      else 
-      return "http://wa.me/+917525057580";
+
+    if (type === "whatsapp") {
+      if (name && message)
+        return (
+          "http://wa.me/+917525057580?text=" +
+          encodeURI("*" + name + " From Portfolio* \n\n" + message)
+        );
+      else return "http://wa.me/+917525057580";
     }
   };
   useEffect(() => {
@@ -68,11 +61,12 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
             className="w-100 h-100 border rounded rounded-3 map"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            title="map"
           ></iframe>
           <div className="text-center">
             <a
               href="https://goo.gl/maps/D8mffzbxZgtD2FcC7"
-              target={"_blank"}
+              target={"_blank"} rel={"noreferrer"}
               className="text-secondary fw-bold text-decoration-none"
             >
               <i className="fa-solid fa-location-dot"></i> Noida, India
@@ -91,7 +85,7 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
             </div>
             <a
               href="https://www.linkedin.com/in/mr-danish/"
-              target={"_blank"}
+              target={"_blank"} rel={"noreferrer"}
               className="mt-2 btn btn-sm btn-outline-secondary w-100 rounded rounded-pill"
             >
               <i className="fa-brands fa-linkedin"></i> LinkedIn
@@ -108,7 +102,9 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
             <a
               href="tel:+917525057580"
               className="display-4 rounded rounded-circle border border-secondary shadow-top-bottom-only p-3"
-              onClick={()=>{vibrateDevice(150)}}
+              onClick={() => {
+                vibrateDevice(150);
+              }}
             >
               <i className="fa-solid fa-phone text-dark"></i>
             </a>
@@ -141,7 +137,7 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
               <a
                 href={getMessage("whatsapp")}
                 className="align-self-end btn rounded rounded-pill shadow-sm text-dark"
-                target={"_blank"}
+                target={"_blank"} rel={"noreferrer"}
               >
                 <i className="fa-brands fa-whatsapp"></i> Whatsapp
               </a>

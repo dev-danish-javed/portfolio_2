@@ -7,17 +7,17 @@ const App_Routes = {
   CONTACT: "/contact",
   EXPERIENCE: {
     ROOT: "/experience",
-    default :"/experience/paymentus",
+    default: "/experience/paymentus",
     PAYMENTUS: "/experience/paymentus",
     MINDFIRE: "/experience/mindfire",
     SAPIENT: "/experience/sapient",
     PROJECTS: {
-      ROOT:"/experience/projects",
-      default:"/experience/projects/my_space",
-      MY_SPACE:"/experience/projects/my_space",
-      BAAN_BAINI:"/experience/projects/baan_baini",      
-      PORTFOLIO:"/experience/projects/portfolio"
-    }
+      ROOT: "/experience/projects",
+      default: "/experience/projects/my_space",
+      MY_SPACE: "/experience/projects/my_space",
+      BAAN_BAINI: "/experience/projects/baan_baini",
+      PORTFOLIO: "/experience/projects/portfolio",
+    },
   },
 };
 

@@ -21,7 +21,6 @@ const Experience_Projects = ({ activeRoute, handleMenuChange }) => {
   ];
 
   const handleProjectChange = (activeProjectUrl) => {
-    
     vibrateDevice(35);
     setTimeout(() => {
       let newActiveProject = projects.filter(
@@ -35,7 +34,7 @@ const Experience_Projects = ({ activeRoute, handleMenuChange }) => {
     <button
       className={
         "btn btn-sm font-poppins rounded rounded-pill projects-button" +
-        (project.title == activeProject ? " active-project" : "")
+        (project.title === activeProject ? " active-project" : "")
       }
       onClick={() => {
         handleProjectChange(project.url);

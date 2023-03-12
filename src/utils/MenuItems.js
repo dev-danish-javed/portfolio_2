@@ -1,5 +1,4 @@
 import App_Routes from "../App_Routes";
-import userIcon from './../assets/Nav Icons/User Icon.png';
 class MenuItem {
   constructor(itemName, displayIndex, iconClass, route) {
     this.itemName = itemName;
