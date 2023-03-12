@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import App_Routes from "../App_Routes";
 import vibrateDevice from "../utils/VibrateDevices";
 import "./../css/App_Education.css";
 const App_Education = ({ activeRoute, handleMenuChange }) => {
@@ -41,7 +42,7 @@ const App_Education = ({ activeRoute, handleMenuChange }) => {
             <br />I scored <span className="fw-bold">76%</span> and after my
             course completion, I received campus placement with{" "}
             <Link
-              to="/experience/sapient"
+              to={App_Routes.EXPERIENCE.SAPIENT}
               className=" text-color-accent fw-bold text-nowrap"
               onClick={() => {
                 vibrateDevice(35);

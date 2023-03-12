@@ -3,9 +3,9 @@ import App_Routes from "../App_Routes";
 import vibrateDevice from "../utils/VibrateDevices";
 import "./../css/App_Nav.css";
 const App_Nav = ({ menuItems, handleMenuChange, isMobile, activeRoute }) => {
-  if (activeRoute === "/" && !isMobile) activeRoute = App_Routes.default;
-  if (activeRoute === "/" && isMobile) activeRoute = undefined;
-
+  if (activeRoute === App_Routes.ROOT+'/' && !isMobile) activeRoute = App_Routes.default;
+  if (activeRoute === App_Routes.ROOT+'/' && isMobile) activeRoute = undefined;
+  console.log('activeRoute',activeRoute);
   let activeItem = menuItems.filter((element) =>
     activeRoute?.includes(element.route)
   )[0];
