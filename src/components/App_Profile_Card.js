@@ -16,8 +16,7 @@ class App_Profile_Card extends React.Component {
 
   componentDidMount() {
     this.timeout = setInterval(() => {
-      let currentIdx = this.state.textIdx;
-      this.setState({ textIdx: currentIdx + 1 });
+      this.setState((previousIndex)=>({ textIdx: previousIndex.textIdx + 1 }));
     }, 150);
   }
 
@@ -26,7 +25,7 @@ class App_Profile_Card extends React.Component {
   }
   render() {
     let title = profileTexts[this.state.textIdx % profileTexts.length];
-
+    
     return (
       <>
         <div
