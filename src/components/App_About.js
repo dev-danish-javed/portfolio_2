@@ -44,9 +44,9 @@ const App_About = ({ activeRoute, handleMenuChange }) => {
           <strong className="">Hello! I'm Danish Javed</strong>
           <span>
             , Full-Stack Developer from Noida, India. I have rich experience in
-            Java and Angular. I have understanding of databases as well.
+            Java, <span className="fw-bold">SpringBoot</span>, <span className="fw-bold">MicrosServices</span> and Angular. I have understanding of databases as well.
             <br />
-            Currently, I am exploring React.
+            Currently, I am exploring AWS and React.
           </span>
           <span className="mt-3 d-block">
             I would love to hear back from you.

@@ -3,6 +3,7 @@ import "./../css/App_Skill.css";
 import javaIcon from "./../assets/Tech Icons/Java Icon.png";
 import angularIcon from "./../assets/Tech Icons/Angular Icon.png";
 import springbootIcon from "./../assets/Tech Icons/Springboot Icon.png";
+import microServicesIcon from "./../assets/Tech Icons/MicroServices Icon.png"
 import reactIcon from "./../assets/Tech Icons/React Icon.png";
 import dbIcon from "./../assets/Tech Icons/DB Icon.png";
 import mongoDBIcon from "./../assets/Tech Icons/MongoDB Icon.png";
@@ -14,11 +15,12 @@ import javaScriptIcon from "./../assets/Tech Icons/JavaScript Icon.png";
 import typescriptScriptIcon from "./../assets/Tech Icons/TypeScript Icon.png";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import AppProgressBar from "../utils/AppProgressBar";
-import javaCertificate from "./../assets/HackerRank Certificates/Java_Certificate.png";
-import problemSolvingCertificate from "./../assets/HackerRank Certificates/Problem_Solving_Certificate.png";
-import angularCertificate from "./../assets/HackerRank Certificates/Angular_Certificate.png";
-import reactCertificate from "./../assets/HackerRank Certificates/React_Certificate.png";
-import javaScriptCertificate from "./../assets/HackerRank Certificates/JavaScript_Certificate.png";
+import javaCertificate from "./../assets/Certificates/Java_Certificate.png";
+import problemSolvingCertificate from "./../assets/Certificates/Problem_Solving_Certificate.png";
+import angularCertificate from "./../assets/Certificates/Angular_Certificate.png";
+import reactCertificate from "./../assets/Certificates/React_Certificate.png";
+import javaScriptCertificate from "./../assets/Certificates/JavaScript_Certificate.png";
+import microServicesCertificate from "./../assets/Certificates/MicroServices_Certificate.jpg";
 import { useState } from "react";
 const App_SKill = ({ activeRoute, handleMenuChange }) => {
   let [skillsViewGrid, setSkillsViewGrid] = useState(false);
@@ -45,6 +47,7 @@ const App_SKill = ({ activeRoute, handleMenuChange }) => {
   let skills = [
     new Skill(javaIcon, 85, "Java"),
     new Skill(springbootIcon, 70, "SpringBoot"),
+    new Skill(microServicesIcon, 67, "MicroServices"),
     new Skill(angularIcon, 65, "Angular"),
     new Skill(mongoDBIcon, 40, "MongoDB"),
     new Skill(dbIcon, 50, "SQL"),
@@ -70,6 +73,11 @@ const App_SKill = ({ activeRoute, handleMenuChange }) => {
       javaCertificate,
       "https://www.hackerrank.com/certificates/434371378a5d",
       "Java"
+    ),
+    new Certificate(
+      microServicesCertificate,
+      "https://www.udemy.com/certificate/UC-bc3f458b-13cd-439e-86c1-49c990669ff6/",
+      "MicroServices"
     ),
     new Certificate(
       problemSolvingCertificate,
