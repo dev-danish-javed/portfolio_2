@@ -31,7 +31,7 @@ class App_Profile_Card extends React.Component {
         <div
           className={
             (this.props.isMobile ? "page-item " : "") +
-            "profile-card bg-light h-100 text-center rounded rounded-3 d-flex flex-column justify-content-between"
+            "profile-card bg-light text-center rounded rounded-3 d-flex flex-column justify-content-between h-100"
           }
         >
           <div className="profile-image-container rounded rounded-3">
@@ -78,7 +78,7 @@ class App_Profile_Card extends React.Component {
             <a
               className="col-8 border-top fw-bold py-3 text-decoration-none text-dark pointer-event"
               href={resume}
-              download="Danish Javed Resume"
+              download="Danish Javed Resume.pdf"
             >
               DOWNLOAD RESUME <i className="fa-solid fa-download"></i>
             </a>
@@ -87,7 +87,7 @@ class App_Profile_Card extends React.Component {
         <div
           className={
             this.props.isMobile
-              ? "about-redirect-button mt-3 me-3 fw-bolder text-end"
+              ? "about-redirect-button mt-3 me-3 fw-bolder text-end pt-3 pb-3"
               : "d-none"
           }
         >

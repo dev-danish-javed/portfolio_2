@@ -28,7 +28,7 @@ function App() {
   let [isMobile,setIsMobile]=useState(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent));
   
   let resizeObserver=new ResizeObserver(entries=>{
-    setIsMobile(window.screen.width <800);
+    setIsMobile(window.screen.width <850);
   });
   resizeObserver.observe(document.body);
   const handleMenuChange = (route) => {

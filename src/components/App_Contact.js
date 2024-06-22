@@ -58,7 +58,7 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
         <div className="h-50 mb-5">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224096.33663241914!2d77.25281390517094!3d28.645133432818064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1678040235576!5m2!1sen!2sin"
-            className="w-100 h-100 border rounded rounded-3 map"
+            className="w-100 h-100 border rounded rounded-3 map shadow-sm"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="map"
@@ -66,7 +66,8 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
           <div className="text-center">
             <a
               href="https://goo.gl/maps/D8mffzbxZgtD2FcC7"
-              target={"_blank"} rel={"noreferrer"}
+              target={"_blank"}
+              rel={"noreferrer"}
               className="text-secondary fw-bold text-decoration-none"
             >
               <i className="fa-solid fa-location-dot"></i> Noida, India
@@ -84,8 +85,9 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
               {contactDetails}
             </div>
             <a
-              href="https://www.linkedin.com/in/mr-danish/"
-              target={"_blank"} rel={"noreferrer"}
+              href="https://www.linkedin.com/in/dev-danish-javed/"
+              target={"_blank"}
+              rel={"noreferrer"}
               className="mt-2 btn btn-sm btn-outline-secondary w-100 rounded rounded-pill"
             >
               <i className="fa-brands fa-linkedin"></i> LinkedIn
@@ -93,9 +95,9 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
             <a
               className="btn btn-sm border-accent text-color-accent shadow-sm fw-semibold w-100 rounded rounded-pill d-block d-md-none"
               href={resume}
-              download="Danish Javed Resume"
+              download="Danish Javed Resume.pdf"
             >
-              <i className="fa-solid fa-download"></i> Resume
+              <i className="fa-solid fa-download"></i> Get Resume
             </a>
           </div>
           <div className="mt-3 d-block d-md-none">
@@ -137,7 +139,8 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
               <a
                 href={getMessage("whatsapp")}
                 className="align-self-end btn rounded rounded-pill shadow-sm text-dark"
-                target={"_blank"} rel={"noreferrer"}
+                target={"_blank"}
+                rel={"noreferrer"}
               >
                 <i className="fa-brands fa-whatsapp"></i> Whatsapp
               </a>
@@ -149,6 +152,16 @@ const App_Contact = ({ activeRoute, handleMenuChange }) => {
               </a>
             </div>
           </div>
+        </div>
+        <div className="d-none d-sm-none d-md-block d-lg-none text-center mt-3">
+          <a
+            className="btn btn-sm border-accent text-color-accent shadow-sm py-2
+                      fw-semibold w-100 rounded rounded-pill d-md-block d-lg-none"
+            href={resume}
+            download="Danish Javed Resume.pdf"
+          >
+            DOWNLOAD RESUME <i className="fa-solid fa-download"></i>
+          </a>
         </div>
       </div>
     </div>
